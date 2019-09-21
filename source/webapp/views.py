@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from webapp.forms import RecordForm
 from webapp.models import Record
@@ -27,3 +27,24 @@ def record_create_view(request, *args, **kwargs):
 
         else:
             return render(request, 'new_record.html', context={'form': form})
+
+
+def record_update_view(request, pk):
+    record = get_object_or_404(Record, pk=pk)
+    if request.method == 'GET':
+        form = RecordForm(data={
+            'author': record.author,
+            'email_author': record.email_author,
+            'text': record.text
+        })
+        return render(request, 'update_render.html', context={'form': form, 'record': record})
+    elif request.method == 'POST':
+        form = RecordForm(data=request.POST)
+        if form.is_valid():
+            record.author = form.cleaned_data['author']
+            record.email_author = form.cleaned_data['email_author']
+            record.text = form.cleaned_data['text']
+            record.save()
+            return redirect('/')
+        else:
+            return render(request, 'update_render.html', context={'form': form, 'record': record})
