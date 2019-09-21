@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}New challenge{% endblock %}
+{% block menu %}
+    <li class="nav-item active" xmlns="http://www.w3.org/1999/html">
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'new_record' %}">New entry</a>
+      </li>
+{% endblock %}
+
+{% block content %}
+    <div class="card m-2">
+        <div class="card-header">
+            Are you sure want to delete article "{{ record }}"?
+        </div>
+        <div class="card-body">
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <form method="POST" record="{% url "delete_record" record.pk %}">
+                        {% include 'partial/record_form.html' with button_text='Delete' %}
+                    </form>
+                </div>
+                <div class="col-auto my-1">
+                    <form><a href="{% url 'index'%}" class="btn btn-primary">Cancel</a></form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

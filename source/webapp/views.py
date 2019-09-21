@@ -48,3 +48,12 @@ def record_update_view(request, pk):
             return redirect('/')
         else:
             return render(request, 'update_render.html', context={'form': form, 'record': record})
+
+
+def record_delete_view(request, pk):
+    record = get_object_or_404(Record, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'delete_record.html', context={'record': record})
+    elif request.method == 'POST':
+        record.delete()
+        return redirect('index')
