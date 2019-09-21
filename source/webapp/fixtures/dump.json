@@ -1,0 +1,92 @@
+[
+{
+  "model": "webapp.record",
+  "pk": 1,
+  "fields": {
+    "author": "me",
+    "email_author": "admin@admin.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "created_at": "2019-09-21T06:30:46.207Z",
+    "updated_at": "2019-09-21T06:30:46.207Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 2,
+  "fields": {
+    "author": "she",
+    "email_author": "lorem@admin.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "created_at": "2019-09-21T06:32:10.309Z",
+    "updated_at": "2019-09-21T06:32:10.309Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 3,
+  "fields": {
+    "author": "User",
+    "email_author": "User@admin.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "created_at": "2019-09-21T06:34:02.016Z",
+    "updated_at": "2019-09-21T06:34:02.016Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 4,
+  "fields": {
+    "author": "Bacil",
+    "email_author": "Bacil@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "created_at": "2019-09-21T06:34:39.820Z",
+    "updated_at": "2019-09-21T06:34:39.820Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 5,
+  "fields": {
+    "author": "Fedor",
+    "email_author": "Fedor_1874@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "created_at": "2019-09-21T06:35:28.196Z",
+    "updated_at": "2019-09-21T06:35:28.196Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 6,
+  "fields": {
+    "author": "Lan",
+    "email_author": "lan.89@mail.ru",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "created_at": "2019-09-21T06:36:45.060Z",
+    "updated_at": "2019-09-21T06:36:45.060Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Tuc2H6lOVdV6$YYaoaHyo19VeNNWcRSjGmqjtZgaGpxC46C3oGfCJbWI=",
+    "last_login": "2019-09-21T06:23:11.061Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-21T06:20:30.595Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

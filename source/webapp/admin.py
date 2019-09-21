@@ -1,4 +1,10 @@
 from django.contrib import admin
-from webapp.models import Record  
+from webapp.models import Record
 
-admin.site.register(Record)
+
+class RecordAdmin(admin.ModelAdmin):
+    list_display = ['id', 'author', 'status', 'created_at', 'updated_at']
+
+
+admin.site.register(Record, RecordAdmin)
+
