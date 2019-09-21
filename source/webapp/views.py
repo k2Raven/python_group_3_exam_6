@@ -1,14 +1,22 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
-from webapp.forms import RecordForm
+from webapp.forms import RecordForm, SearchForm
 from webapp.models import Record
 
 
 def index_view(request, *args, **kwargs):
-    records = Record.objects.order_by('-created_at').filter(status='active')
-    return render(request, 'index.html', context={
-        'records': records
-    })
+    if request.method == 'GET':
+        form = SearchForm()
+        if request.GET:
+            r = request.GET.get('query')
+            records = Record.objects.order_by('-created_at').filter(author__contains=r, status='active')
+        else:
+            records = Record.objects.order_by('-created_at').filter(status='active')
+        return render(request, 'index.html', context={
+            'records': records,
+            'form': form
+        })
+
 
 
 def record_create_view(request, *args, **kwargs):
@@ -57,3 +65,4 @@ def record_delete_view(request, pk):
     elif request.method == 'POST':
         record.delete()
         return redirect('index')
+
